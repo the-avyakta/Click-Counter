@@ -1,33 +1,43 @@
+<!DOCTYPE html>
 <html>
-  <head>Click-Counter</head>
-<style>
-  .center{
-  text-align: center;
-  }
-  #button{
-    width: 90px;
-    height: 90px;
-    background: Navy;
-  border-radius: 100%;
-  }
-  
-</style>
-  <body>
+<head>
+  <title>Click Counter</title>
+  <style>
+    .center {
+      text-align: center;
+    }
+    #button {
+      width: 90px;
+      height: 90px;
+      background: navy;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-    <section>
-<h2 style="center" id="val"></h2>      
-    
-    <section id="button" onclick="count()"> </section>
-    </section>
+  <h2 class="center" id="val">0</h2>
 
-    <script>
-      function count(){
-        count +=1;
-      }
-      btn= document.getElementbyId('button');
-      val= document.getElementbyId('val');
-      val.innerHTML=btn
-    </script>
-    
-  </body>
+  <section class="center">
+    <div id="button" onclick="count()">Click</div>
+  </section>
+
+  <script>
+    var count = 0;
+    var btn = document.getElementById('button');
+    var val = document.getElementById('val');
+
+    function count() {
+      count++;
+      val.innerHTML = count;
+    }
+  </script>
+
+</body>
 </html>
