@@ -12,14 +12,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       margin: 0;
     }
     #button {
       width: 90px;
       height: 90px;
       background: navy;
-      border-radius: 50%; /* Use 50% for perfect circle */
+      border-radius: 50%;
       color: white;
       font-size: 20px;
       cursor: pointer;
@@ -34,14 +33,14 @@
   <h2 class="center" id="val">0</h2>
 
   <section class="center">
-    <div id="button" onclick="count()">Click</div>
+    <div id="button" onclick="incrementCount()">Click</div>
   </section>
 
   <script>
     var count = 0;
     var val = document.getElementById('val');
 
-    function count() {
+    function incrementCount() {
       count++;
       val.innerHTML = count;
     }
