@@ -5,3 +5,4 @@
       count++;
       val.innerHTML = count;
     }
+
