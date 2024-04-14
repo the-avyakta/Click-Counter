@@ -3,31 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Click Counter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-    }
-    #button {
-      width: 90px;
-      height: 90px;
-      background: #000;
-      border-radius: 50%;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      user-select: none;
-    }
-  </style>
+
 </head>
 <body>
 <h1 class="center"> Avyakta's Counter </h1>
@@ -37,15 +15,7 @@
     <div id="button" onclick="incrementCount()">Click</div>
   </section>
 
-  <script>
-    var count = 0;
-    var val = document.getElementById('val');
-
-    function incrementCount() {
-      count++;
-      val.innerHTML = count;
-    }
-  </script>
+  <script src="script.js">
 
 </body>
 </html>
